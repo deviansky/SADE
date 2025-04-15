@@ -13,22 +13,30 @@ const Navbar = () => {
       </div>
 
       <nav className="mt-4">
-        <div className="px-4 py-3 flex items-center">
-          <Home className="h-5 w-5 mr-3" />
-          <span>Beranda</span>
-        </div>
-        <div className="px-4 py-3 flex items-center">
-          <CreditCard className="h-5 w-5 mr-3" />
-          <span>Keuangan</span>
-        </div>
-        <div className="px-4 py-3 flex items-center">
-          <Calendar className="h-5 w-5 mr-3" />
-          <span>Kegiatan</span>
-        </div>
+        <Link to="/">
+          <div className="px-4 py-3 flex items-center">
+            <Home className="h-5 w-5 mr-3" />
+              <span>Beranda</span>
+          </div>
+        </Link>
+        <Link to="/Keuangan">
+          <div className="px-4 py-3 flex items-center">
+            <CreditCard className="h-5 w-5 mr-3" />
+            <span>Keuangan</span>
+          </div>
+        </Link>
+        <Link to="/kegiatan">
+          <div className="px-4 py-3 flex items-center">
+            <Calendar className="h-5 w-5 mr-3" />
+            <span>Kegiatan</span>
+          </div>
+        </Link>
+        <Link to="/penghuni">
         <div className="px-4 py-3 flex items-center">
           <Users className="h-5 w-5 mr-3" />
           <span>Penghuni</span>
         </div>
+        </Link>
       </nav>
 
       <div className="absolute bottom-0 left-0 w-64 border-t border-indigo-600">
