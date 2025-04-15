@@ -45,7 +45,7 @@ const Beranda = () => {
       {/* Main Content */}
       <div className="flex-1 overflow-auto">
         <div className="p-6">
-          <h1 className="text-2xl font-bold mb-6">Beranda</h1>
+          <h1 className=" ">Beranda</h1>
 
           {/* Stats Cards */}
           <div className="grid grid-cols-3 gap-6 mb-6">

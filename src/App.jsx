@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Keuangan from './pages/Keuangan';
 import Kegiatan from './pages/kegiatan';
 import Penghuni from './pages/penghuni';
+import Login from './pages/LoginScreen';
 // Import komponen lain yang diperlukan
 // ... import komponen lainnya
 
@@ -14,6 +15,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Beranda />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/keuangan" element={<Keuangan />} />
         <Route path="/kegiatan" element={<Kegiatan />} />
         <Route path="/penghuni" element={<Penghuni />} />
